@@ -1,0 +1,11 @@
+C:\Users\patri\source\repos\LoginFormsApp\bin\Debug\LoginFormsApp.exe.config
+C:\Users\patri\source\repos\LoginFormsApp\bin\Debug\LoginFormsApp.exe
+C:\Users\patri\source\repos\LoginFormsApp\bin\Debug\LoginFormsApp.pdb
+C:\Users\patri\source\repos\LoginFormsApp\obj\Debug\LoginFormsApp.csproj.AssemblyReference.cache
+C:\Users\patri\source\repos\LoginFormsApp\obj\Debug\LoginFormsApp.Form1.resources
+C:\Users\patri\source\repos\LoginFormsApp\obj\Debug\LoginFormsApp.MainForm.resources
+C:\Users\patri\source\repos\LoginFormsApp\obj\Debug\LoginFormsApp.Properties.Resources.resources
+C:\Users\patri\source\repos\LoginFormsApp\obj\Debug\LoginFormsApp.csproj.GenerateResource.cache
+C:\Users\patri\source\repos\LoginFormsApp\obj\Debug\LoginFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\patri\source\repos\LoginFormsApp\obj\Debug\LoginFormsApp.exe
+C:\Users\patri\source\repos\LoginFormsApp\obj\Debug\LoginFormsApp.pdb
