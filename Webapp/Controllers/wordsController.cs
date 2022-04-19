@@ -1,5 +1,6 @@
 ﻿using EZAZ.Data;
 using EZAZ.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
@@ -53,6 +54,7 @@ namespace EZAZ.Controllers
         }
 
         // GET: words/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -61,6 +63,7 @@ namespace EZAZ.Controllers
         // POST: words/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,word,score")] words words)
@@ -75,6 +78,7 @@ namespace EZAZ.Controllers
         }
 
         // GET: words/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -93,6 +97,7 @@ namespace EZAZ.Controllers
         // POST: words/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,word,score")] words words)
@@ -126,6 +131,7 @@ namespace EZAZ.Controllers
         }
 
         // GET: words/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -144,6 +150,7 @@ namespace EZAZ.Controllers
         }
 
         // POST: words/Delete/5
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
