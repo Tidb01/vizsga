@@ -183,9 +183,13 @@ namespace Akasztofa
                 Console.WriteLine("---------------------------------------------");
 
                 Random random = new Random();
-                List<String> szotar = new List<String> { "hello" };
+                List<DataRow> szotar = table.AsEnumerable().ToList();
                 int index = random.Next(szotar.Count);
-                String randomW = szotar[index];
+                DataRow szo = szotar[index];
+                string randomW = szo["word"].ToString();
+
+                Console.WriteLine(randomW);
+                Console.Read();
 
                 foreach (char c in randomW)
                 {
@@ -196,7 +200,7 @@ namespace Akasztofa
                 int wrong = 0;
                 List<char> current = new List<char>();
                 int currentright = 0;
-
+                Console.Read();
                 while (wrong != 5 && currentright != guessed)
                 {
                     Console.Write("\nTippelt betük: ");

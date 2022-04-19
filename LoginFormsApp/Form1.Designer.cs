@@ -65,7 +65,6 @@ namespace LoginFormsApp
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
-           // this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
             // 
             // label1
             // 
@@ -99,6 +98,7 @@ namespace LoginFormsApp
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(165, 27);
             this.txtEmail.TabIndex = 4;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtPassword
             // 
@@ -109,6 +109,7 @@ namespace LoginFormsApp
             this.txtPassword.PasswordChar = '•';
             this.txtPassword.Size = new System.Drawing.Size(165, 27);
             this.txtPassword.TabIndex = 5;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // Form1
             // 
